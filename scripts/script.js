@@ -14,10 +14,22 @@ document.addEventListener("DOMContentLoaded", () => {
   // Sample data for events
   const events = [
       {
-          image: 'path-to-event-thumbnail.jpg',
+          image: '../img/html-day.png',
           name: 'HTML Day',
           date: 'July 13, 2024',
           location: 'Presidental Murray Park'
+      },
+      {
+        image: '../img/html-day.png',
+        name: 'HTML Day',
+        date: 'July 13, 2024',
+        location: 'Presidental Murray Park'
+      },
+      {
+        image: '../img/html-day.png',
+        name: 'HTML Day',
+        date: 'July 13, 2024',
+        location: 'Presidental Murray Park'
       },
   ];
 
