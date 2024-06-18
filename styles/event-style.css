@@ -4,13 +4,14 @@ body, html {
   font-family: Arial, sans-serif;
   height: 100%;
   width: 100%;
+  background-color: #fffff9;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #fffff9;
   padding: 10px 40px;
   position: fixed;
   width: 95vw;
@@ -56,22 +57,25 @@ body, html {
 }
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 3.5em;
   max-width: 90vw;
 }
 
-.current-future-event {
-  background-color: #fff;
+.current-future-event,
+.past-event {
+  background-color: transparent;
   text-align: left;
   padding: 0 5vw;
 }
 
-.current-future-event h2 {
+.current-future-event h2,
+.past-event h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-.event-list {
+.event-list,
+.past-event-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -84,7 +88,7 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: left;
-  background-color: #fff;
+  background-color: transparent;
   padding: 20px;
   border-radius: 8px;
   max-width: 400px;
@@ -94,8 +98,16 @@ body, html {
 
 .event-item img {
   width: 20vw;
-  height: 25vh;
-  border-radius: 8px;
+  height: 30vh;
+  transition: all 0.1s ease-out;
+}
+
+.event-item img:hover{
+  transform: scale(0.9);
+}
+
+.event-item a{
+  text-decoration: none;
 }
 
 .event-item h2 {
@@ -103,13 +115,28 @@ body, html {
   margin: 10px 0;
 }
 
+.event-item a:hover{
+  text-decoration: underline;
+}
+
 .event-item p {
   margin: 5px 0;
   color: #555;
 }
 
+.year-category{
+  display: flex;
+  flex-direction: column;
+}
+
+#year-2023-2024, #year-2022-2023{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*Footer style section*/
 #footer-section{
+  margin-top: 50px;
   min-height:20vh;
   display: flex;
   justify-content: center;
@@ -131,4 +158,19 @@ body, html {
 
 .social-medias ion-icon{
   font-size: 3em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .event-item {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .event-item {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
 }
