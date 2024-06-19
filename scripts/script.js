@@ -1,12 +1,24 @@
 //Hamburger Menu for responsiveness
 document.addEventListener('DOMContentLoaded', () => {
   const menuIcon = document.getElementById('menu-icon');
-  const navLinks = document.getElementById('nav-links');
+  const closeIcon = document.getElementById('close-icon');
+  const menuOverlay = document.getElementById('menu-overlay');
 
   menuIcon.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
+      menuOverlay.classList.add('open');
+  });
+
+  closeIcon.addEventListener('click', () => {
+      menuOverlay.classList.remove('open');
+  });
+
+  window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+          menuOverlay.classList.remove('open');
+      }
   });
 });
+
 
 /* ************************* */
 //Event Card Handling Function

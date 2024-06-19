@@ -7,22 +7,34 @@
     <link rel="stylesheet" href="../styles/event-style.css">
 </head>
 <body>
-  <!--Navbar Structur (including hamburger menu for responsiveness)-->
+  <!--Navbar Structure (including hamburger menu for responsiveness)-->
   <section class="navbar">
     <div class="container">
-      <div class="logo">
-        <a href="index.html"><img src="../img/logo.png" alt="Logo"></a>
-      </div>
+        <div class="logo">
+            <a href="index.html"><img src="../img/logo.png" alt="Logo"></a>
+        </div>
 
-      <div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="event.html">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+        <ion-icon name="reorder-three-outline" class="menu-icon" id="menu-icon"></ion-icon>
+
+        <div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
-  </section>
+</section>
+
+<!--Hamburger Section-->
+<section class="menu-overlay" id="menu-overlay">
+    <ion-icon name="reorder-three-outline" class="close-icon" id="close-icon"></ion-icon>
+    <ul class="overlay-nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</section>
 
   <!--Hero Section-->
   <section class="hero">
