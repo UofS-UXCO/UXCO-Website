@@ -1,3 +1,4 @@
+//Hamburger Menu for responsiveness
 document.addEventListener('DOMContentLoaded', function() {
   var hamburger = document.querySelector('.hamburger-menu');
   var mobileMenu = document.querySelector('.mobile-menu');
@@ -7,12 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+/* ************************* */
+//Event Card Handling Function
 document.addEventListener("DOMContentLoaded", () => {
   const eventList = document.getElementById("event-list");
   const pastEventList2023 = document.getElementById("year-2023-2024");
   const pastEventList2022 = document.getElementById("year-2022-2023");
 
-  // Sample data for events
+  //Current Even Data.
+  //Create new component to add new event card.
   const currentEvents = [
       {
           image: '../img/html-day.png',
@@ -23,7 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
       },
   ];
 
+  //Past Even Data.
+  //Create new component to add new event card in specific year (e.g., year-2023-2024.)
   const pastEvents = {
+      //Year 2023-2024
       "year-2023-2024": [
           {
               image: '../img/html-day.png',
@@ -40,27 +47,15 @@ document.addEventListener("DOMContentLoaded", () => {
               url: 'https://example.com/past-event-2'
           }
       ],
+
+      //Year 2022-2023
       "year-2022-2023": [
-          {
-              image: '../img/html-day.png',
-              name: 'Past Event 3',
-              date: 'June 20, 2023',
-              location: 'Boston, MA',
-              url: 'https://example.com/past-event-3'
-          },
-          {
-            image: '../img/html-day.png',
-            name: 'Past Event 3',
-            date: 'June 20, 2023',
-            location: 'Boston, MA',
-            url: 'https://example.com/past-event-3'
-        },
-        {
-          image: '../img/html-day.png',
-          name: 'Past Event 3',
-          date: 'June 20, 2023',
-          location: 'Boston, MA',
-          url: 'https://example.com/past-event-3'
+      {
+        image: '../img/html-day.png',
+        name: 'Past Event 3',
+        date: 'June 20, 2023',
+        location: 'Boston, MA',
+        url: 'https://example.com/past-event-3'
       },
       {
         image: '../img/html-day.png',
@@ -68,15 +63,22 @@ document.addEventListener("DOMContentLoaded", () => {
         date: 'June 20, 2023',
         location: 'Boston, MA',
         url: 'https://example.com/past-event-3'
-    },
-          {
-              image: '../img/html-day.png',
-              name: 'Past Event 4',
-              date: 'January 15, 2023',
-              location: 'Miami, FL',
-              url: 'https://example.com/past-event-4'
-          }
-      ]
+      },
+      {
+        image: '../img/html-day.png',
+        name: 'Past Event 3',
+        date: 'June 20, 2023',
+        location: 'Boston, MA',
+        url: 'https://example.com/past-event-3'
+      },
+      {
+        image: '../img/html-day.png',
+        name: 'Past Event 3',
+        date: 'June 20, 2023',
+        location: 'Boston, MA',
+        url: 'https://example.com/past-event-3'
+      },
+    ]
   };
 
   // Function to display events
@@ -104,10 +106,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   }
 
-  // Display the current events
+  // Call to display the current events
   displayEvents(currentEvents, eventList);
 
-  // Display the past events by year
+  // Call to display the past events by year
   Object.keys(pastEvents).forEach(year => {
       const container = document.getElementById(year);
       displayEvents(pastEvents[year], container);

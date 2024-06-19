@@ -1,7 +1,16 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../font/Neue\ Plak\ Extended\ Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font:"Neue Plak Extended";
+  font-family:"Neue Plak Extended", Arial, sans-serif;
+  letter-spacing:1px;
   height: 100%;
   width: 100%;
   background-color: #fffff9;
@@ -50,15 +59,20 @@ body, html {
 
 .hero {
   display: flex;
-  height: 20vh;
+  height: 25vh;
   color: #000;
   text-align: left;
   padding: 20vh 5vw;
 }
 
 .hero h1 {
-  font-size: 3.5em;
-  max-width: 90vw;
+  font:"Neue Plak Extended";
+  font-family:"Neue Plak Extended", Arial, sans-serif;
+  font-size:3.5em;
+  max-width:90vw;
+  line-height: 1em;
+  vertical-align:baseline;
+  letter-spacing:1px;
 }
 
 .current-future-event,
@@ -97,7 +111,7 @@ body, html {
 }
 
 .event-item img {
-  width: 20vw;
+  min-width: 20vw;
   height: 30vh;
   transition: all 0.1s ease-out;
 }
@@ -113,6 +127,11 @@ body, html {
 .event-item h2 {
   font-size: 1.5rem;
   margin: 10px 0;
+  color:#000;
+}
+
+.event-item .event-heading{
+  font-weight: 700;
 }
 
 .event-item a:hover{
@@ -127,6 +146,10 @@ body, html {
 .year-category{
   display: flex;
   flex-direction: column;
+}
+
+.year-category h2{
+  font-size: 1.5em;
 }
 
 #year-2023-2024, #year-2022-2023{
@@ -162,6 +185,10 @@ body, html {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5em;
+}
+
   .event-item {
       flex: 1 1 calc(50% - 20px);
       max-width: calc(50% - 20px);
@@ -169,6 +196,15 @@ body, html {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    height: 40vh;
+    padding: 10vh 5vw;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
   .event-item {
       flex: 1 1 100%;
       max-width: 100%;
