@@ -1,5 +1,6 @@
 @font-face {
   font-family: 'CustomFont';
+  src: url('../font/Neue\ Plak\ Extended\ Bold.ttf') format('truetype');
   src: url('../font/Neue\ Plak\ Extended\ Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -9,13 +10,14 @@ body, html {
   margin: 0;
   padding: 0;
   font:"Neue Plak Extended";
-  font-family:"Neue Plak Extended", Arial, sans-serif;
+  font-family:"Neue Plak Extended Bold", Arial, sans-serif;
   letter-spacing:1px;
   height: 100%;
   width: 100%;
   background-color: #fffff9;
 }
 
+/*Navigation bar styling*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -26,6 +28,14 @@ body, html {
   width: 95vw;
   top: 0;
   z-index: 1000;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .logo{
@@ -55,10 +65,14 @@ body, html {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
+  word-spacing: 0.1px;
 }
 
+/*Hero Section Styling*/
 .hero {
   display: flex;
+  flex-direction: column;
+  
   height: 25vh;
   color: #000;
   text-align: left;
@@ -75,6 +89,7 @@ body, html {
   letter-spacing:1px;
 }
 
+/*Event Section Styling*/
 .current-future-event,
 .past-event {
   background-color: transparent;
@@ -98,6 +113,7 @@ body, html {
   
 }
 
+/*Event Card Styling (script.js)*/
 .event-item {
   display: flex;
   flex-direction: column;
@@ -181,6 +197,7 @@ body, html {
 
 .social-medias ion-icon{
   font-size: 3em;
+  cursor: pointer;
 }
 
 /* Responsive adjustments */
@@ -195,6 +212,7 @@ body, html {
   }
 }
 
+/*mobile viewport*/
 @media (max-width: 480px) {
   .hero {
     height: 40vh;

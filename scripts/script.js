@@ -1,10 +1,10 @@
 //Hamburger Menu for responsiveness
-document.addEventListener('DOMContentLoaded', function() {
-  var hamburger = document.querySelector('.hamburger-menu');
-  var mobileMenu = document.querySelector('.mobile-menu');
+document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon = document.getElementById('menu-icon');
+  const navLinks = document.getElementById('nav-links');
 
-  hamburger.addEventListener('click', function() {
-    mobileMenu.classList.toggle('active');
+  menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
   });
 });
 
