@@ -72,14 +72,13 @@ body, html {
 .menu-icon {
   display: none;
   color: #000;
-  font-size: 2rem;
+  font-size: 3rem;
   cursor: pointer;
 }
 
 .close-icon {
-  display: none;
   color: #fffff9;
-  font-size: 2rem;
+  font-size: 3rem;
   cursor: pointer;
 }
 
@@ -163,6 +162,7 @@ body, html {
   background-color: transparent;
   text-align: left;
   padding: 0 5vw;
+  margin-bottom: 20vh;
 }
 
 .current-future-event h2,
@@ -242,42 +242,55 @@ body, html {
 }
 
 /*Footer style section*/
-#footer-section{
-  margin-top: 50px;
-  min-height:20vh;
+.footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
+  padding: 10px 20px;
 }
 
-.credit{
-  font-size: 1em;
+.footer h2 {
+  margin: 0;
 }
 
-.social-medias{
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 50px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
 }
 
-.social-medias ion-icon{
-  font-size: 3em;
-  cursor: pointer;
+.footer ul li {
+  margin-right: 20px;
+}
+
+.footer ul li:last-child {
+  margin-right: 0;
+}
+
+.footer ul li a {
+  padding: 6px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.5em;
-}
+  }
 
   .event-item {
       flex: 1 1 calc(50% - 20px);
       max-width: calc(50% - 20px);
   }
+
+  .navbar{
+    padding: 10px 0px;
+    width: 130vw;
+  }
+
   .nav-links{
     display: none;
   }
@@ -287,6 +300,21 @@ body, html {
 
   .menu-overlay {
     display: flex;
+  }
+
+  .footer {
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .footer ul {
+    margin-top: 10px;
+
+  }
+
+  .footer ul li {
+    margin-right: 10px;
   }
 }
 
