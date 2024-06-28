@@ -1,0 +1,284 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: purple;
+    height: 700px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    margin-left: 20px;
+}
+
+.Links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.Links ul li {
+    margin-right: 20px;
+}
+
+.Links ul li a {
+    padding: 6px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.heading h1{
+    font-size: 90px;
+    padding: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.heading p{
+    padding-left: 50px;
+    font-size: 20px;
+    margin-top: 0;
+}
+.heading .lrn-btn{
+    padding-left: 50px;
+}
+.heading button{
+    padding: 10px;
+    height: 50px;
+    width: 130px;
+}
+
+.body-content{
+    width: 85%;
+    padding-top: 70px;
+    height: auto;
+    position: relative;
+
+}
+.content{
+    float: left;
+    width: 50%;
+}
+.upcoming{
+    padding-left: 0;
+    margin-left: 15%;
+    height: 100px;
+}
+.News{
+    margin-left: 30%;
+    height: 100px;
+}
+
+.upcoming button{
+    padding: 15px;
+    height: 50px;
+    width: 150px;
+}
+
+.News button{
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.collaboration{
+    margin-top: 40px;
+    height: auto;
+    width: 1000px;
+    padding: 30px; 
+    margin-left: 4%;
+    position: static;
+    
+}
+.collaboration h2{
+    margin-top: 20%;
+}
+.collaboration img{
+    margin-left: 40px;
+}
+.collaboration::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer h2 {
+    margin: 0;
+    /* Ensure no margin is added */
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer ul li {
+    margin-right: 20px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer ul li a {
+    padding: 6px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+
+button {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button:focus {
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+button:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 15px 60px;
+  }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .heading h1 {
+        font-size: 60px; 
+        padding: 30px; 
+    }
+    
+    .heading p {
+        font-size: 18px; 
+        padding-left: 30px; 
+    }
+
+    .heading .lrn-btn {
+        padding-left: 30px; 
+    }
+
+    .heading button {
+        height: 40px; 
+        width: 100px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .heading h1 {
+        font-size: 40px; 
+        padding: 20px; 
+    }
+    
+    .heading p {
+        font-size: 16px; 
+        padding-left: 20px; 
+    }
+
+    .heading .lrn-btn {
+        padding-left: 20px; 
+    }
+
+    .heading button {
+        height: 30px; 
+        width: 90px; 
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .collaboration {
+        width: 90%; 
+        margin-left: auto; 
+        margin-right: auto;
+        margin-top: 290px;
+    }
+
+    .collaboration h2 {
+        margin-top: 10%; 
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .collaboration img {
+        margin: 20px auto; 
+        display: block; 
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer ul {
+        margin-top: 10px;
+    }
+
+    .footer ul li {
+        margin-right: 10px;
+    }
+}
