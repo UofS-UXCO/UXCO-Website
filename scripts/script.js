@@ -44,20 +44,49 @@ document.addEventListener("DOMContentLoaded", () => {
   const pastEvents = {
       //Year 2023-2024
       "year-2023-2024": [
-          {
+            {
               image: '../img/html-day.png',
-              name: 'Past Event 1',
-              date: 'March 10, 2024',
-              location: 'Chicago, IL',
+              name: 'Pixel.Palette',
+              date: 'March 22, 2024',
+              location: '2nd Ave Loft, SK',
               url: 'https://example.com/past-event-1'
-          },
-          {
+            },
+            {
               image: '../img/html-day.png',
-              name: 'Past Event 2',
-              date: 'December 5, 2023',
-              location: 'San Francisco, CA',
+              name: 'Potluck & Trivia Night',
+              date: 'January 19, 2024',
+              location: 'THORV 110, Thorvalson Building',
               url: 'https://example.com/past-event-2'
-          }
+            },
+            {
+            image: '../img/html-day.png',
+            name: 'Connect Cafe',
+            date: 'November 27, 2023',
+            location: 'THORV 205A, Thorvalson Building',
+            url: 'https://example.com/past-event-2'
+            },
+            {
+                image: '../img/html-day.png',
+                name: 'Halloween Party',
+                date: 'October 26, 2023',
+                location: 'Spinks 3rd Floor, Spinks Addition',
+                url: 'https://example.com/past-event-2'
+            },
+            {
+                image: '../img/html-day.png',
+                name: 'Connect Cafe',
+                date: 'November 27, 2023',
+                location: 'THORV 205A, Thorvalson Building',
+                url: 'https://example.com/past-event-2'
+                },
+            {
+                image: '../img/html-day.png',
+                name: 'CSISP Intern Panel',
+                date: 'September 27, 2023',
+                location: 'Room 18, Edwards Business School',
+                url: 'https://example.com/past-event-2'
+            }
+
       ],
 
       //Year 2022-2023
