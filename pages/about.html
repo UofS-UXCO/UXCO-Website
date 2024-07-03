@@ -7,19 +7,37 @@
     <link rel="stylesheet" href="../styles/about.css">
 </head>
 <body>
-    <div class="navigation">
+    <!--Navbar Structure (including hamburger menu for responsiveness)-->
+    <section class="navbar">
+    <div class="container">
         <div class="logo">
-            <img src="../img/image.png" width="30" height="30">
+            <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
         </div>
-        <div class="Links">
-            <ul>
-                <li><a href="home.html">Home</a></li>
+
+        <ion-icon name="reorder-three-outline" class="menu-icon" id="menu-icon"></ion-icon>
+
+        <div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="about.html">About</a></li>
                 <li><a href="event.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
+    </section>
+
+    <!--Hamburger Section-->
+    <section class="menu-overlay" id="menu-overlay">
+    <ion-icon name="close-outline" class="close-icon" id="close-icon"></ion-icon>
+
+    <ul class="overlay-nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </section>
+
     <div class="heading">
         <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo pariatur libero
             porro aliquid? </h1>
@@ -123,14 +141,18 @@
         </div>  
     </div>
     <div class="footer">
-        <h2 class="year">UxCo © 2024</h2>
+        <h2 class="year">UXCO © 2024</h2>
         <ul>
             <li><a class="fo" href="#">Instagram</a></li>
             <li><a class="fo" href="#">Discord</a></li>
-            <li><a class="fo" href="#">LinedIn</a></li>
+            <li><a class="fo" href="#">LinkedIn</a></li>
             <li><a class="fo" href="#">Email</a></li>
         </ul>
     </div>
      
+    <script defer src="../scripts/script.js"></script>
+    <!--ion-icon external library links-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

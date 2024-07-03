@@ -14,35 +14,124 @@ body {
     margin: 0;
 }
 
-.navigation {
+/* Navigation bar styling */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-   
-}
-
-.logo img {
-    margin-left: 20px;
-}
-
-.Links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    background-color: #fffff9;
+    padding: 10px 40px;
+    position: fixed;
+    width: 95vw;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .container {
     display: flex;
-}
-
-.Links ul li {
-    margin-right: 20px;
-}
-
-.Links ul li a {
-    padding: 6px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .logo {
+    margin: 20px 50px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .logo img {
+    height: 5vh;
+    width: auto;
+    transition: all 1s;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: #000;
     text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
+    font-size: 1.5rem;
+    font-weight: bold;
+    word-spacing: 0.1px;
+  }
+  
+  /* Hamburger menu icon initially hidden */
+  .menu-icon {
+    display: none;
+    color: #000;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  
+  .close-icon {
+    color: #fffff9;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  
+  /* Menu overlay initially hidden */
+  .menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -105%;
+    width: 75%;
+    height: 100%;
+    background-color: #333;
+    z-index: 1000; /*Ensure the overlay appear on top of everything*/
+    transition: right 0.3s ease-in-out;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px;
+  }
+  
+  .menu-overlay.open {
+    right: 0;
+    display: flex;
+  }
+  
+  .close-icon {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .overlay-nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .overlay-nav-links li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .overlay-nav-links a {
+    color: #fffff9;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 3rem;
+    display: block;
+    padding: 10px 20px;
+  }
 
 /* .heading h1 {
     text-align-last: center;
@@ -176,38 +265,39 @@ body {
     color: white;
 } */
 
+/*Footer style section*/
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-}
-
-.footer h2 {
+  }
+  
+  .footer h2 {
     margin: 0;
-}
-
-.footer ul {
+  }
+  
+  .footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-.footer ul li {
+  }
+  
+  .footer ul li {
     margin-right: 20px;
-}
-
-.footer ul li:last-child {
+  }
+  
+  .footer ul li:last-child {
     margin-right: 0;
-}
-
-.footer ul li a {
+  }
+  
+  .footer ul li a {
     padding: 6px;
     text-decoration: none;
     color: black;
     font-size: 20px;
-}
+  }
 
 /* CSS */
 .button {
@@ -295,6 +385,22 @@ body {
 
 
 @media (max-width: 768px) {
+    .navbar{
+        padding: 10px 0px;
+        width: 130vw;
+      }
+    
+      .nav-links{
+        display: none;
+      }
+      .menu-icon {
+        display: block;
+      }
+    
+      .menu-overlay {
+        display: flex;
+      }
+
     .heading h1 {
         font-size: 40px; 
         padding: 50px; 

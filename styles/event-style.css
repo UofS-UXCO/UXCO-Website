@@ -220,6 +220,7 @@ body, html {
 
 .event-item a:hover{
   text-decoration: underline;
+  color: #000;
 }
 
 .event-item p {
