@@ -142,6 +142,10 @@ body {
     margin-bottom: 0;
 } */
 
+.heading{
+  margin-top: 10vh;
+}
+
 .heading h1 {
     text-align: center; /* Center align the text */
     font-size: 60px; /* Default font size */
@@ -175,6 +179,7 @@ body {
 
 .content {
     margin-bottom: 40px;
+    margin-top: 10vh;
     width: calc(50% - 20px);
 }
 

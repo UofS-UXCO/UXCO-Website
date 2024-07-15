@@ -133,6 +133,10 @@ body{
     padding: 10px 20px;
   }
 
+.heading{
+  margin-top: 10vh;
+}
+
 .heading h1{
     font-size: 90px;
     padding: 50px;
@@ -194,7 +198,7 @@ body{
 }
 
 .collaboration{
-    margin-top: 40px;
+    margin-top: 10vh;
     height: auto;
     width: 1000px;
     padding: 30px; 
