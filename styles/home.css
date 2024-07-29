@@ -101,122 +101,111 @@ body{
     display: flex;
   }
   
-  .close-icon {
-    align-self: flex-end;
-    margin-bottom: 20px;
-    color: white;
-  }
+.close-icon {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  color: white;
+}
   
-  .overlay-nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    flex-grow: 1;
-  }
+.overlay-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  flex-grow: 1;
+}
   
-  .overlay-nav-links li {
-    margin: 10px 0;
-    width: 100%;
-    text-align: right;
-  }
+.overlay-nav-links li {
+  margin: 10px 0;
+  width: 100%;
+  text-align: right;
+}
   
-  .overlay-nav-links a {
-    color: #fffff9;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 3rem;
-    display: block;
-    padding: 10px 20px;
-  }
+.overlay-nav-links a {
+  color: #fffff9;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 3rem;
+  display: block;
+  padding: 10px 20px;
+}
 
-.heading{
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 10vh;
+  padding-left: 50px;
+}
+
+.heading h1 {
+  font-size: calc(2.5vw + 20px);
+  margin-bottom: 10px;
+}
+
+.heading p {
+  font-size: calc(0.5vw + 10px);
+  margin-top: 0;
+}
+
+.body-content {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 50px;
+}
+
+.content {
+  flex: 1;
+  margin: 10px;
+}
+
+.upcoming, .News {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.collaboration {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: left;
+  padding-left: 50px;
   margin-top: 10vh;
 }
 
-.heading h1{
-  font-size: 90px;
-  padding: 50px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-.heading p{
-  padding-left: 50px;
-  font-size: 20px;
-  margin-top: 0;
-}
-.heading .lrn-btn{
-  padding-left: 50px;
-}
-.heading button{
-  min-width: 120px;
-  padding: 10px;
-  width: 130px;
-}
-
-.body-content{
-  width: 85%;
-  height: 30vh;
+.footer {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-}
-.content{
-  float: left;
-  width: 50%;
-}
-.upcoming{
-  padding-left: 0;
-  margin-left: 15%;
-  height: 100px;
-}
-.News{
-  margin-left: 30%;
-  height: 100px;
+  padding: 10px 50px;
 }
 
-.upcoming button{
-  padding: 15px;
-  height: 50px;
-  width: 150px;
+.footer h2 {
+  margin: 0;
 }
 
-.News button{
-    border: none;
-    box-shadow: none;
-    text-decoration: none;
-    border-bottom: 2px solid #000;
-    background-color: transparent;
-    color: black;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
+.footer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.collaboration{
-    margin-top: 10vh;
-    height: auto;
-    width: 1000px;
-    padding: 30px; 
-    margin-left: 4%;
-    position: static;
-    
+.footer ul li {
+  margin-right: 20px;
 }
-.collaboration h2{
-    margin-top: 20%;
-}
-.collaboration img{
-    margin-left: 40px;
-}
-.collaboration::after{
-    content: "";
-    clear: both;
-    display: table;
+
+.footer ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 /*Footer style section*/
@@ -306,25 +295,44 @@ button:not([disabled]):active {
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
-    .heading h1 {
-      font-size: 60px; 
-      padding: 30px; 
-    }
+  .heading, .body-content, .collaboration, .footer {
+    padding-left: 30px;
+  }
+
+  .heading h1 {
+    font-size: 60px;
+    padding: 0;
+  }
+
+  .heading p {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .collaboration {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .heading h1 {
+    font-size: 60px; 
+    padding: 30px; 
+  }
     
-    .heading p {
-      font-size: 18px; 
-      padding-left: 30px; 
-    }
+  .heading p {
+    font-size: 18px; 
+    padding-left: 30px; 
+  }
 
-    .heading .lrn-btn {
-      padding-left: 30px; 
-    }
+  .heading .lrn-btn {
+    padding-left: 30px; 
+  }
 
-    .heading button {
-      height: auto; 
-      min-width: 120px;
-      min-height: 50px; 
-    }
+  .heading button {
+    height: auto; 
+    min-width: 120px;
+    min-height: 50px; 
+  }
 }
 
 @media (max-width: 576px) {
