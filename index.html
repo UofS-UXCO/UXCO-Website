@@ -33,7 +33,7 @@
         </ul>
     </section>
 
-    <div class="heading">
+    <section class="heading">
         <h1>Grow with our community of student designers.</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo pariatur libero
             porro aliquid? Voluptates, <br> doloremque voluptatibus. Soluta minima tempora facere,
@@ -43,29 +43,48 @@
                 <button>LEARN MORE</button>
             </a>
         </div>
-    </div>
+    </section>
 
-    <div class="body-content">
-        <div class="content">
-            <div class="upcoming">
-                <h1>Upcoming Events</h1>
-                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                <a href="pages/event.html">
-                    <button>VIEW ALL EVENTS</button>
-                </a>
-            </div>
+    <!-- Past Events Section -->
+    <section class="past-events">
+        <h2>Past Events</h2>
+        <div class="event-card">
+            <h3>Event Name 1</h3>
+            <p>Short description about Event 1.</p>
+            <a href="link-to-recording">Link Recording</a>
+            <a href="link-to-slides">Slides</a>
         </div>
-        <div class="content">
-            <div class="News">
-                <h1>News</h1>
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <a href="#">
-                    <button>Read More</button>
-                </a>    
-            </div>
+        <div class="event-card">
+            <h3>Event Name 2</h3>
+            <p>Short description about Event 2.</p>
+            <a href="link-to-recording">Link Recording</a>
+            <a href="link-to-slides">Slides</a>
         </div>
-    </div>
+        <!-- Add additional event cards as needed -->
+        <a href="pages/event.html">
+            <button>VIEW MORE EVENTS</button>
+        </a>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>FAQs</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button">What is UXCO?</button>
+                <div class="accordion-content">
+                    <p>UXCO is a community for student designers to grow and share their experiences.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button">How can I participate in events?</button>
+                <div class="accordion-content">
+                    <p>Check our events page and sign up for any upcoming event that interests you.</p>
+                </div>
+            </div>
+            <!-- Additional FAQ items as needed -->
+        </div>
+    </section>
 
     <section class="collaboration">
         <h2>Organization we have collaborated with</h2><br>
@@ -76,7 +95,7 @@
         </div>
     </section>
 
-    <div class="footer">
+    <section class="footer">
         <h2 class="year">UXCO © 2024</h2>
         <ul>
             <li><a class="fo" href="#">Instagram</a></li>
@@ -84,6 +103,12 @@
             <li><a class="fo" href="#">LinkedIn</a></li>
             <li><a class="fo" href="#">Email</a></li>
         </ul>
-    </div>
+    </section>
+
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/according.js"></script>
+    <!--ion-icon external library links-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
