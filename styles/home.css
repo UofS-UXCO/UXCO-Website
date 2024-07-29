@@ -139,50 +139,50 @@ body{
 }
 
 .heading h1{
-    font-size: 90px;
-    padding: 50px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+  font-size: 90px;
+  padding: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .heading p{
-    padding-left: 50px;
-    font-size: 20px;
-    margin-top: 0;
+  padding-left: 50px;
+  font-size: 20px;
+  margin-top: 0;
 }
 .heading .lrn-btn{
-    padding-left: 50px;
+  padding-left: 50px;
 }
 .heading button{
-    padding: 10px;
-    height: 50px;
-    width: 130px;
+  min-width: 120px;
+  padding: 10px;
+  width: 130px;
 }
 
 .body-content{
-    width: 85%;
-    padding-top: 70px;
-    height: auto;
-    position: relative;
-
+  width: 85%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .content{
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
 }
 .upcoming{
-    padding-left: 0;
-    margin-left: 15%;
-    height: 100px;
+  padding-left: 0;
+  margin-left: 15%;
+  height: 100px;
 }
 .News{
-    margin-left: 30%;
-    height: 100px;
+  margin-left: 30%;
+  height: 100px;
 }
 
 .upcoming button{
-    padding: 15px;
-    height: 50px;
-    width: 150px;
+  padding: 15px;
+  height: 50px;
+  width: 150px;
 }
 
 .News button{
@@ -239,18 +239,18 @@ body{
 }
   
 .footer ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
   
 .footer ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
   
 .footer ul li a {
-    padding: 6px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+  padding: 6px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 /**/
@@ -307,22 +307,23 @@ button:not([disabled]):active {
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .heading h1 {
-        font-size: 60px; 
-        padding: 30px; 
+      font-size: 60px; 
+      padding: 30px; 
     }
     
     .heading p {
-        font-size: 18px; 
-        padding-left: 30px; 
+      font-size: 18px; 
+      padding-left: 30px; 
     }
 
     .heading .lrn-btn {
-        padding-left: 30px; 
+      padding-left: 30px; 
     }
 
     .heading button {
-        height: 40px; 
-        width: 100px; 
+      height: auto; 
+      min-width: 120px;
+      min-height: 50px; 
     }
 }
 
