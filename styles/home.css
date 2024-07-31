@@ -159,14 +159,37 @@ body{
   padding: 20px 50px;
 }
 
+.event-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .event-card {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+  padding: 10px;
+  width: calc(30% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.event-card img {
+  width: 50%;
+  height: auto;
   margin-bottom: 10px;
 }
 
 .event-card h3, .event-card p, .event-card a {
   margin: 5px 0;
+}
+
+.event-card a {
+  color: #686767;
+  font-style:italic
+}
+
+.event-card a:hover {
+  color:#333
 }
 
 /* FAQ Section Styles */
@@ -217,11 +240,22 @@ body{
   margin-top: 10vh;
 }
 
+.collab-logo{
+  display: flex;
+  gap: 50px;
+}
+
+.collab-logo img{
+  width:calc(30% - 25px);
+  height: auto;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
+  margin-top: 20vh;
 }
 
 .footer h2 {
@@ -346,7 +380,11 @@ button:not([disabled]):active {
     padding: 0;
   }
 
-  .collaboration {
+  .event-card {
+    width: 100%;
+  }
+
+  .collaboration img {
     width: 100%;
     margin-left: 0;
   }
