@@ -4,13 +4,15 @@
   "description": "Official Website for U of S UX Collective.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"jekyll serve",
+    "postinstall": "bundle install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5"
+    "body-parser": "1.20.2",
+    "cors": "2.8.5"
   }
 }

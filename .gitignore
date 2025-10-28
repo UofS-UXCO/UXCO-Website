@@ -53,20 +53,5 @@ npm-debug.log*
 ehthumbs.db
 Thumbs.db
 
-# Dependency lock files
-# Note: Typically you DO want to include package-lock.json or yarn.lock in your source control
-# Uncomment below lines if you have a specific reason not to include these files
-# /package-lock.json
-# /yarn.lock
-
-# Optional: Uncomment if you are using MySQL and have local database files you wish to ignore
-# *.sql
-# *.sqlite
-
-# GSAP files (only if you have local GSAP files that should not be committed)
-# /gsap/
-
-# Other files and folders to consider ignoring based on your project needs
-# /tmp/
-# /log/
-# /vendor/  # For projects using Composer with PHP
+# Ignore Jekyll local cache
+/_site/
