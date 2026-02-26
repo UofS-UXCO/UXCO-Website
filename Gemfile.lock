@@ -54,7 +54,7 @@ GEM
     public_suffix (5.0.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rexml (3.4.0)
+    rexml (3.4.4)
     rouge (4.5.1)
     safe_yaml (1.0.4)
     sassc (2.4.0)
@@ -72,7 +72,7 @@ DEPENDENCIES
   jekyll (= 4.4.1)
 
 RUBY VERSION
-   ruby 3.4.5p51
+   ruby 3.4.8p72
 
 BUNDLED WITH
    2.6.9

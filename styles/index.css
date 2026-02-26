@@ -1,0 +1,46 @@
+#bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url('../landing.jpg') center/cover;
+}
+
+#hero {
+    min-height: 100vh;
+    position: relative;
+    background: transparent !important;
+    border-bottom: none;
+    padding: 0;
+}
+
+#hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    padding: 8rem 3rem 5rem;
+}
+
+.hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(3.5rem, 8vw, 8rem);
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    max-width: 900px;
+    color: #f5f4f0;
+    animation: fadeUp 0.8s 0.1s ease both;
+}
+
+.hero-title em {
+    font-style: italic;
+    color: var(--accent);
+}
+
+.hero-sub {
+    max-width: 360px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.7;
+}
